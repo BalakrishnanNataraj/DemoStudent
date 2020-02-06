@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Edit Student Info</title>
+</head>
+<body>
+	    
+	<div align="center">
+		        
+		<h1>Edit Student</h1>
+		        <br />         
+		<form action="/api/save" th:object="${student}" method="post">
+			              
+			<table border="0" cellpadding="10">
+				<tr>
+					                    
+					<td>Student Id:</td>                     
+					<td><input type="text" th:field="*{id}" /></td>                 
+				</tr>
+				                
+				<tr>
+					                    
+					<td>First Name:</td>                     
+					<td><input type="text" th:field="*{firstName}" /></td>
+					                
+				</tr>
+				                
+				<tr>
+					                    
+					<td>Last Name:</td>                     
+					<td><input type="text" th:field="*{lastName}" /></td>
+					                
+				</tr>
+				                
+				<tr>
+					                    
+					<td>eMail Id:</td>                     
+					<td><input type="text" th:field="*{emailId}" /></td>
+					                
+				</tr>
+				                
+				<tr>
+					                    
+					<td>Password:</td>                     
+					<td><input type="password" th:field="*{stdPwd}" /></td>
+					                
+				</tr>
+				<tr>
+					                    
+					<td>Department:</td>                     
+					<td><input type="text" th:field="*{stdDeportment}" /></td>
+					                
+				</tr>
+				<tr>
+					                    
+					<td>Date Of Birth:</td>                     
+					<td><input type="text" th:field="*{studentDob}" /></td>
+					                
+				</tr>
+				  
+				<tr>
+					                    
+					<td>Age:</td>                     
+					<td><input type="text" th:field="*{studentAge}" /></td>
+					                
+				</tr>
+				   
+				<tr>
+					                    
+					<td>Permanent Address:</td>                     
+					<td><input type="text" th:field="*{stdAddress}" /></td>
+					                
+				</tr>
+				 
+				<tr>
+					                    
+					<td>Conduct Number:</td>                     
+					<td><input type="text" th:field="*{stdConductNo}" /></td>
+					                
+				</tr>
+				                                              
+				<tr>
+					                    
+					<td colspan="2"><button type="submit">Save</button></td>
+					                
+				</tr>
+				            
+			</table>
+			        
+		</form>
+		    
+	</div>
+</body>
+</html>
