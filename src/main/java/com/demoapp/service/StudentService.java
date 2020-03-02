@@ -32,4 +32,5 @@ public class StudentService {
 	public void delete(long id) {
 		studentRepository.deleteById(id);
 	}
+	
 }
